@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OfficeBrain — Local AI</title><link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<main class="shell">
+<header class="hero">
+  <div><div class="eyebrow">QVAC • LOCAL AI</div><h1>OfficeBrain</h1><p>Private workplace assistance running directly on your computer.</p></div>
+  <div class="badge"><span></span> ON-DEVICE</div>
+</header>
+<section class="privacy"><div class="icon">⌁</div><div><strong>Your prompt stays local</strong><p>No cloud AI API is used. QVAC loads the model on this machine.</p></div></section>
+<section class="card">
+  <div class="card-top"><div><h2>Ask OfficeBrain</h2><p>Draft, summarize, plan, explain, or brainstorm.</p></div><div id="status" class="status">Checking QVAC…</div></div>
+  <textarea id="prompt" placeholder="Example: Create a 5-point agenda for a weekly product team meeting."></textarea>
+  <div class="actions">
+    <div class="examples">
+      <button data-prompt="Create a 5-point agenda for a weekly product team meeting.">Meeting agenda</button>
+      <button data-prompt="Write a concise professional follow-up after a client meeting.">Client follow-up</button>
+      <button data-prompt="Turn these rough notes into three clear action items: launch website, test login, prepare demo.">Action items</button>
+    </div>
+    <button id="ask" class="ask">Run local AI →</button>
+  </div>
+</section>
+<section id="resultCard" class="card result-card hidden">
+  <div class="card-top"><div><h2>Local AI output</h2><p id="meta">QVAC inference complete</p></div><div class="local-pill">✓ LOCAL</div></div>
+  <pre id="answer"></pre>
+</section>
+<footer><span>Powered by Tether QVAC SDK</span><span>MIT • Open source</span></footer>
+</main>
+<script src="/app.js"></script>
+</body></html>
