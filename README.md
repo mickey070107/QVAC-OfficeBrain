@@ -41,3 +41,7 @@ MIT
 - Source: https://github.com/tetherto/qvac
 
 Built as an independent open-source project using the QVAC SDK.
+## Features
+- Local AI inference
+- QVAC-powered Llama model
+- No cloud AI API
